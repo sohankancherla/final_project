@@ -29,7 +29,7 @@ This code uses the MIMIC-III dataset, which requires credentialed access. After 
 
 1. Download the MIMIC-III dataset
 2. Place the CSV files in a directory
-3. Update the `data_path` variable in `data_processing.py`
+3. Update the `data_path` variable in `data_processing.py` to your directory with the downloaded CSV files
 
 ## Usage
 

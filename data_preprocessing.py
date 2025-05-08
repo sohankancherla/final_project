@@ -14,13 +14,6 @@ icu_stays_path = data_path + 'ICUSTAYS.csv.gz'
 note_events_path= data_path + 'NOTEEVENTS.csv.gz'
 chart_events_path = data_path + 'CHARTEVENTS.csv.gz'
 
-# Mount Google Drive (if using Colab)
-try:
-    from google.colab import drive
-    drive.mount('/content/drive')
-except:
-    print("Not running in Colab or drive already mounted")
-
 # Load patients data
 patients_df = pd.read_csv(patients_path, compression='gzip')
 patients_df['DOB'] = pd.to_datetime(patients_df['DOB'])
